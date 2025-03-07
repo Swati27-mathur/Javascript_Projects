@@ -1,43 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="sicalculator">
-        <h2 style="margin: 20px; text-align: center">BMI Calculator</h2>
-        <div class="input-container">
-          <div class="inputdiv ">
-            <label for="weight">Weight:</label>
-            <input
-              class="inputtags"
-              type="number"
-              id="weight"
-              name="weight"
-              placeholder="Enter weight in kg"
-            />
-          </div>
-          <div class="inputdiv">
-            <label for="rate">Height:</label>
-            <input
-              type="number"
-              class="inputtags"
-              id="height"
-              name="height"
-              placeholder="Enter height in meters"
-            />
-          </div>
-          <button onclick="bmicalculate()" class="btn">Calculate</button>
-        </div>
-        <h3 style="text-align: center; margin: 10px" id="result">result:</h3>
-      </div>
+  <body
+    class="bg-gray-900 text-white flex justify-center items-center min-h-screen text-white"
+  >
+    <div
+      class="bg-gray-800 p-6 w-96 rounded-xl shadow-lg drop-shadow-[0px_0px_12px_#FFFFFF] text-center"
+    >
+      <h1 class="text-3xl mb-6 font-bold text-blue-300">BMI CALCULATOR</h1>
+      <input
+        type="number"
+        id="height"
+        placeholder="Height (in cm)"
+        class="w-full p-4 mb-6 rounded-full bg-gray-700 outline-none"
+      />
+      <input
+        type="number"
+        id="weight"
+        placeholder="Weight (in kg)"
+        class="w-full p-4 mb-6 rounded-full bg-gray-700 outline-none"
+      />
+      <button
+        id="calculate"
+        class="w-full p-4 mb-6 rounded-full bg-yellow-500 text-xl font-bold cursor-pointer hover:bg-yellow-600 transition-all"
+      >
+        Calculate BMI
+      </button>
+      <div id="result" class="mt-4 text-lg font-semibold"></div>
     </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    ;
   </body>
 </html>
